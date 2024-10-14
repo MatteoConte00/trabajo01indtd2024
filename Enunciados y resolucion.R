@@ -1,11 +1,16 @@
 #Problema1 (solo tabla)----
 
-La tabla de analizar es la siguiente:
-  
-  d1 d2 d3 d4 
-e1  3 25  2 18
-e2 23 35 28  9
-e3 39  7  7 32
+# La tabla de analizar es la siguiente:
+#   
+#   $$
+#   \begin{array}{c|c|c|c|c}
+# & d_1 & d_2 & d_3 & d_4 \\
+# \hline
+# e_1 & 3 & 25 & 2 & 18 \\
+# e_2 & 23 & 35 & 28 & 9 \\
+# e_3 & 39 & 7 & 7 & 32 \\
+# \end{array}
+# $$
 
 #Wald
 criterio.Wald(X)
@@ -35,24 +40,24 @@ criterio.PuntoIdeal(X,favorable = F)
 
 #Problema2 (testo y solucion)
 
-Una cadena de restaurantes está planificando la expansión en tres nuevas ciudades.
-Las opciones son:
-  
-  -   **Ciudad A**: Una gran metrópoli con alta demanda pero también con alta competencia.
--   **Ciudad B**: Una ciudad de tamaño mediano con menor competencia.
--   **Ciudad C**: Una ciudad pequeña con bajos costos operativos, pero con una demanda potencialmente reducida.
-
-El éxito de la expansión depende de cómo los consumidores respondan a la apertura del restaurante, lo que puede ser: - **Alta demanda**: Muchos consumidores y alta rentabilidad.
-- **Demanda media**: Demanda estable y beneficios moderados.
-- **Baja demanda**: Baja afluencia de clientes y beneficios limitados.
-
-### **Tabla de Decisión (Beneficios estimados en miles de euros)**
-
-| Ciudad       | Alta demanda (k€) | Demanda media (k€) | Baja demanda (k€) |
-  |--------------|-------------------|--------------------|-------------------|
-  | **Ciudad A** | 600               | 400                | 100               |
-  | **Ciudad B** | 900               | 600                | 200               |
-  | **Ciudad C** | 1200              | 700                | 50                |
+# Una cadena de restaurantes está planificando la expansión en tres nuevas ciudades.
+# Las opciones son:
+#   
+#   -   **Ciudad A**: Una gran metrópoli con alta demanda pero también con alta competencia.
+# -   **Ciudad B**: Una ciudad de tamaño mediano con menor competencia.
+# -   **Ciudad C**: Una ciudad pequeña con bajos costos operativos, pero con una demanda potencialmente reducida.
+# 
+# El éxito de la expansión depende de cómo los consumidores respondan a la apertura del restaurante, lo que puede ser: - **Alta demanda**: Muchos consumidores y alta rentabilidad.
+# - **Demanda media**: Demanda estable y beneficios moderados.
+# - **Baja demanda**: Baja afluencia de clientes y beneficios limitados.
+# 
+# ### **Tabla de Decisión (Beneficios estimados en miles de euros)**
+# 
+# | Ciudad       | Alta demanda (k€) | Demanda media (k€) | Baja demanda (k€) |
+#   |--------------|-------------------|--------------------|-------------------|
+#   | **Ciudad A** | 600               | 400                | 100               |
+#   | **Ciudad B** | 900               | 600                | 200               |
+#   | **Ciudad C** | 1200              | 700                | 50                |
   
 
 vec2<-c(600,400,100,900,600,200,1200,700,50)#valores en k€

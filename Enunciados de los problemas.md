@@ -7,10 +7,15 @@ editor_options:
 
 La tabla de analizar es la siguiente:
 
-   d1 d2 d3 d4 
-e1  3 25  2 18
-e2 23 35 28  9
-e3 39  7  7 32
+\[
+\begin{array}{c|c|c|c|c}
+    & d_1 & d_2 & d_3 & d_4 \\
+    \hline
+    e_1 & 3 & 25 & 2 & 18 \\
+    e_2 & 23 & 35 & 28 & 9 \\
+    e_3 & 39 & 7 & 7 & 32 \\
+\end{array}
+\]
 
 ### **Problema 2: Estrategia para un Plan de Expansión Empresarial**
 
