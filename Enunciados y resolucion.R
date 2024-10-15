@@ -5,11 +5,14 @@
 #   | e1|  3 | 25 |  2 | 18 |
 #   | e2| 23 | 35 | 28 |  9 |
 #   | e3| 39 |  7 |  7 | 32 |
-  
+source("TDecisionCodigo/teoriadecision_funciones_incertidumbre.R")
+vec<-c(3,25,2,18,23,35,28,9,39,7,7,32)  
+X<-crea.tablaX(vec,3,4)
 
 #Wald
 criterio.Wald(X)
 criterio.Wald(X,favorable=F)
+
 
 #Optimista
 criterio.Optimista(X)
@@ -58,21 +61,4 @@ criterio.PuntoIdeal(X,favorable = F)
 vec2<-c(600,400,100,900,600,200,1200,700,50)#valores en k€
 X2<-crea.tablaX(vec2,3,3)
 
-#Wald
-criterio.Wald(X2)
-
-#Optimista
-criterio.Optimista(X2)
-
-#Hurwicz
-dibuja.criterio.Hurwicz(X2)
-dibuja.criterio.Hurwicz_Intervalos(X2)
-
-#Savage
-criterio.Savage(X2)
-
-#Laplace
-criterio.Laplace(X2)
-
-#Punto_Ideal
-criterio.PuntoIdeal(X2)
+criterio.Todos(X2,alfa=0.3,favorable=TRUE)
