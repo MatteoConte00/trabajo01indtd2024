@@ -10,31 +10,53 @@ vec<-c(3,25,2,18,23,35,28,9,39,7,7,32)
 X<-crea.tablaX(vec,3,4)
 
 #Wald
-criterio.Wald(X)
+criterio.Wald(X) 
+# alternativa 2
+
 criterio.Wald(X,favorable=F)
+# alternativa 1
 
 
 #Optimista
 criterio.Optimista(X)
+#alternativa 3
+
 criterio.Optimista(X,favorable = F)
+#alternativa 1
+
 
 #Hurwicz
 dibuja.criterio.Hurwicz(X)
 dibuja.criterio.Hurwicz_Intervalos(X)
+#si alfa<1/3: alternativa 2
+#si alfa>1/3: alternativa 3
+
 dibuja.criterio.Hurwicz(X,favorable = F)
-dibuja.criterio.Hurwicz_Intervalos(X,favorable = F)
+#alternativa 1 por cada alfa in (0,1)
+
 
 #Savage
 criterio.Savage(X)
+#alternativa 2
+
 criterio.Savage(X,favorable = F)
+#alternativa 1
+
 
 #Laplace
 criterio.Laplace(X)
+#alternativa 2
+
 criterio.Laplace(X,favorable = F)
+#alternativa 1
+
 
 #Punto_Ideal
 criterio.PuntoIdeal(X)
+#alternativa 2
+
 criterio.PuntoIdeal(X,favorable = F)
+#alternativa 1
 
 #Problema2 (testo y solucion)
 
@@ -62,3 +84,8 @@ vec2<-c(600,400,100,900,600,200,1200,700,50)#valores en k€
 X2<-crea.tablaX(vec2,3,3)
 
 criterio.Todos(X2,alfa=0.3,favorable=TRUE)
+#alternativa 2 si resolvendo con Wald
+#alternativa 3 si resolvendo con Optimista, Savage, Laplace o Ideal
+dibuja.criterio.Hurwicz_Intervalos(X2)
+#si alfa<1/3: alternativa 2
+#si alfa>1/3: alternativa 3
